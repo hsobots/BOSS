@@ -446,7 +446,7 @@ if amrr[1] == Amor then
 amrnew = Amor ; amrold = ik   
 end end end
 Text = Text:gsub(amrnew,amrold)
-AF = CheckBotA(msg) if AF then return sendMsg(msg.chat_id_,msg.id_,AF) end 
+
 GetMsg = ScriptFile.ihso(msg,{Text:match(Text2)})
 if GetMsg then
 print("\27[1;35m¦This_Msg : "..Text2.."  | Plugin is: \27[1;32mScript.lua\27[0m")
@@ -461,7 +461,7 @@ Text = Text:gsub("ی","ي")
 Text = Text:gsub("ک","ك")
 Text = Text:gsub("ه‍","ه")
 if Text:match(hso) then -- Check Commands To admin
-AF = CheckBotA(msg) if AF then return sendMsg(msg.chat_id_,msg.id_,AF) end 
+
 GetMsg = ScriptFile.ihso(msg,{Text:match(hso)})
 if GetMsg then
 print("\27[1;35m¦This_Msg : ",hso.." | Plugin is: \27[1;32mScript.lua\27[0m")
